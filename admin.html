@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración de Usuarios</title>
+    
+     <link rel="stylesheet" href="css/styles03.css"> 
+
+    
+</head>
+<body>
+    <div class="login-container admin-container"> <a href="index.html" class="logout-button">Cerrar Sesión</a>
+        <h2>Panel de Administración de Usuarios</h2>
+
+        <div class="user-form">
+            <h3>Gestión de Usuarios</h3>
+            <form id="userManagementForm">
+                <input type="hidden" id="userId" value=""> <div class="input-group">
+                    <label for="newUsername">Usuario:</label>
+                    <input type="text" id="newUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">Contraseña:</label>
+                    <input type="password" id="newPassword" placeholder="Solo si quieres cambiarla">
+                </div>
+                <div class="select-group">
+                    <label for="newRole">Rol:</label>
+                    <select id="newRole">
+                        <option value="Administrador">Administrador</option>
+                        <option value="Gestor">Gestor</option>
+                        <option value="Supervisor">Supervisor</option>
+                    </select>
+                </div>
+                <button type="submit" id="saveUserButton">Dar de Alta Usuario</button>
+                <button type="button" id="cancelEditButton" class="cancel" style="display:none;">Cancelar Edición</button>
+            </form>
+            <p id="formMessage" class="error-message"></p>
+        </div>
+
+        <div class="user-list">
+            <h3>Usuarios Registrados</h3>
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="usersTableBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

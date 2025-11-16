@@ -1,0 +1,944 @@
+/* =========================================
+   FIBERTECH SOLUTIONS - Estilos CONTACTO
+   Complemento para diseño empresarial
+========================================= */
+
+/* --- HERO INTERNO --- */
+.hero-interno {
+    /* Reutiliza el estilo del héroe interno de 'Nosotros' y 'Proyectos' */
+    margin-top: 80px; 
+    height: 40vh; 
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    color: var(--color-white);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* =========================================
+   1. CONTACTO PRINCIPAL (Formulario + Info)
+   ========================================= */
+
+.contacto-main-section {
+    padding: 100px 0;
+    background-color: var(--color-light-gray);
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Formulario más ancho que la barra lateral */
+    gap: 50px;
+}
+
+/* Formulario */
+.contacto-formulario {
+    background: var(--color-white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+}
+
+.contacto-formulario h3 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--color-dark);
+    font-size: 1rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Información de Contacto (Sidebar) */
+.contacto-info {
+    background: var(--color-primary);
+    padding: 40px;
+    border-radius: 15px;
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contacto-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contacto-info-item .icon {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    color: var(--color-secondary);
+    /* Iconos emoji o placeholder */
+}
+
+.contacto-info-item p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.contacto-info-item strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.contacto-info-item span {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+
+/* =========================================
+   2. SECCIÓN DEL MAPA (ESTILOS AGREGADOS PARA IFRAME)
+   ========================================= */
+
+.mapa-section {
+    padding: 50px 0 100px;
+    text-align: center;
+    background-color: var(--color-white);
+}
+
+.mapa-ubicacion {
+    margin: 40px auto 0;
+    max-width: 1000px; /* Ancho máximo para el contenedor del mapa */
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: var(--shadow-lg); /* Sombra elegante */
+    border: 5px solid var(--color-white); 
+}
+
+.mapa-ubicacion iframe {
+    display: block;
+    width: 100%;
+    /* La altura se controla con el atributo 'height' en el HTML */
+}
+
+.mapa-instruccion {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--color-gray);
+}
+
+
+/* =========================================
+   3. PREGUNTAS FRECUENTES (FAQ)
+   ========================================= */
+
+.faq-section {
+    padding: 80px 0 100px;
+    background-color: var(--color-light-gray);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.faq-item {
+    background-color: var(--color-white);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--color-accent);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.faq-item h3 {
+    font-size: 1.35rem;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   4. MODAL (Para el mensaje de formulario)
+   ========================================= */
+/* Nota: Los estilos principales del modal se añadieron inline en contacto_page.html 
+   para garantizar que funcionen sin el CSS principal, pero si quieres moverlos aquí, 
+   asegúrate de que las clases coincidan.
+*/
+
+/* =========================================
+   5. RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 992px) {
+    .contacto-grid {
+        grid-template-columns: 1fr; /* Una sola columna para móvil */
+        gap: 40px;
+    }
+    
+    .contacto-formulario {
+        order: 1; /* El formulario se mantiene arriba en móvil */
+    }
+
+    .contacto-info {
+        order: 2;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr; /* Una columna para el FAQ en móvil */
+    }
+    
+    /* Responsive para el mapa */
+    .mapa-ubicacion {
+        border-radius: 10px;
+        border-width: 3px;
+    }
+    .mapa-ubicacion iframe {
+        height: 300px; /* Menos altura en dispositivos pequeños */
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* =========================================
+   FIBERTECH SOLUTIONS - Estilos CONTACTO
+   Complemento para diseño empresarial
+========================================= */
+
+/* --- HERO INTERNO --- */
+.hero-interno {
+    /* Reutiliza el estilo del héroe interno de 'Nosotros' y 'Proyectos' */
+    margin-top: 80px; 
+    height: 40vh; 
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    color: var(--color-white);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* =========================================
+   1. CONTACTO PRINCIPAL (Formulario + Info)
+   ========================================= */
+
+.contacto-main-section {
+    padding: 100px 0;
+    background-color: var(--color-light-gray);
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Formulario más ancho que la barra lateral */
+    gap: 50px;
+    align-items: start;
+}
+
+/* --- FORMULARIO --- */
+.contacto-formulario {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border-top: 5px solid var(--color-primary);
+}
+
+.contacto-formulario h2 {
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+.form-descripcion {
+    color: var(--color-gray);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact-form .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--color-dark);
+    font-size: 0.95rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-dark);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: var(--color-white);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    outline: none;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-form {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    color: var(--color-white) !important;
+    font-weight: 700;
+    padding: 14px 35px;
+    transition: var(--transition);
+}
+
+.btn-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+}
+
+/* --- INFORMACIÓN LATERAL --- */
+.contacto-info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.info-card h3 {
+    color: var(--color-primary-dark);
+    font-size: 1.75rem;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--color-light-gray);
+    padding-bottom: 10px;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.info-icon-circle {
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color-light-gray);
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-content h4 {
+    margin: 0 0 5px;
+    font-size: 1.1rem;
+    color: var(--color-dark);
+}
+
+.info-content p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+}
+
+.info-content a {
+    color: var(--color-gray);
+    font-weight: 500;
+}
+
+.info-content a:hover {
+    color: var(--color-primary);
+}
+
+/* --- TARJETA DE EMERGENCIA --- */
+.emergencia-card {
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--color-accent);
+}
+
+.emergencia-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+}
+
+.emergencia-card h4 {
+    color: var(--color-white);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.emergencia-card p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+}
+
+.btn-emergencia {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-emergencia:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+/* =========================================
+   2. OFICINAS
+   ========================================= */
+
+.oficinas-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: var(--color-white);
+}
+
+.oficinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.oficina-card {
+    padding: 30px 20px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 10px;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.oficina-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.oficina-icono {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--color-primary-dark);
+}
+
+.oficina-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.oficina-tipo {
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 15px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.oficina-direccion,
+.oficina-tel {
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* =========================================
+   3. MAPA
+   ========================================= */
+.mapa-section {
+    padding: 80px 0;
+    background-color: var(--color-light-gray);
+}
+
+.mapa-placeholder {
+    height: 450px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border: 3px solid var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.mapa-instruccion {
+    font-size: 1rem;
+    margin-top: 15px;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+
+/* =========================================
+   4. FAQ (Preguntas Frecuentes)
+   ========================================= */
+
+.faq-section {
+    padding: 80px 0 100px;
+    background-color: var(--color-white);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.faq-item {
+    background-color: var(--color-light-gray);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--color-accent);
+}
+
+.faq-item h3 {
+    font-size: 1.35rem;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   5. RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 992px) {
+    .contacto-grid {
+        grid-template-columns: 1fr; /* Una sola columna para móvil */
+        gap: 40px;
+    }
+    
+    .contacto-formulario {
+        order: 1;
+    }
+
+    .contacto-info-sidebar {
+        order: 2;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .oficinas-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .contacto-formulario {
+        padding: 30px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    /* =========================================
+   CONTACTO - ESTILOS ESPECÍFICOS
+========================================= */
+
+/* Hero Interno */
+.hero-interno {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0066cc 0%, #667eea 100%);
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-interno::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+/* Contacto Principal */
+.contacto-main-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+/* Formulario */
+.contacto-formulario {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.contacto-formulario h3 {
+    color: #0066cc;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #4a4a4a;
+    font-size: 0.95rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+    outline: none;
+}
+
+.btn-enviar {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #004499;
+    transform: translateY(-2px);
+}
+
+/* Información de Contacto (Sidebar) */
+.contacto-info {
+    background: #0066cc;
+    padding: 3rem;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contacto-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contacto-info-item .icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #00d4ff;
+}
+
+.contacto-info-item p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.contacto-info-item strong {
+    display: block;
+    font-weight: 600;
+}
+
+.contacto-info-item span {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+
+/* SECCIÓN DEL MAPA (Nuevo estilo) */
+.mapa-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--color-light-gray); /* Fondo para destacar la sección */
+}
+
+.mapa-ubicacion {
+    margin: 40px auto 0;
+    max-width: 1200px; /* Ancho máximo para el contenedor del mapa */
+    border-radius: 15px;
+    overflow: hidden; /* Esto es clave para que el iframe respete el border-radius */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+    border: 5px solid white; /* Borde interior para un mejor acabado */
+}
+
+.mapa-ubicacion iframe {
+    display: block;
+    width: 100%;
+    /* La altura se define en el HTML (height="450") */
+}
+
+.hero-content {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+}
+
+.mapa-instruccion {
+    margin-top: 1rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* FAQ */
+.faq-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.faq-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.faq-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-left-color: #0066cc;
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (Ajustes para móvil)
+========================================= */
+
+@media (max-width: 992px) {
+    .contacto-grid {
+        grid-template-columns: 1fr; /* Una sola columna para móvil */
+        gap: 3rem;
+    }
+    
+    .contacto-formulario {
+        order: 2; /* Pone el formulario debajo de la info en móvil */
+    }
+
+    .contacto-info {
+        order: 1;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mapa-ubicacion {
+        border-radius: 10px;
+    }
+    .mapa-ubicacion iframe {
+        height: 300px; /* Menos altura en dispositivos pequeños */
+    }
+}

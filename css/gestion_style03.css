@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Fondo suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007bff; /* Azul primario */
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.user-info {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.logout-button {
+    background-color: #dc3545; /* Rojo para salir */
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.obra-form {
+    flex: 1 1 450px; /* Crece y ocupa un espacio base de 450px */
+}
+
+.obra-list {
+    flex: 2 1 600px; /* Crece más que el formulario */
+}
+
+/* Formulario */
+.obra-form h2 {
+    color: #007bff;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botones de Acción */
+.action-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.action-button.alta {
+    background-color: #28a745; /* Verde */
+}
+
+.action-button.alta:hover {
+    background-color: #218838;
+}
+
+.action-button.modificacion {
+    background-color: #ffc107; /* Amarillo */
+    color: #333;
+}
+
+.action-button.modificacion:hover {
+    background-color: #e0a800;
+}
+
+.action-button.baja {
+    background-color: #dc3545; /* Rojo */
+}
+
+.action-button.baja:hover {
+    background-color: #c82333;
+}
+
+.action-button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+/* Tabla de Listado */
+.obra-list h2 {
+    color: #007bff;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.obra-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.obra-list th, .obra-list td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.obra-list th {
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-detalle {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilos para la exportación */
+.action-button.exportar {
+    background-color: #008000; /* Verde oscuro, típico de Excel */
+    float: right;
+    width: auto;
+}
+
+.action-button.exportar:hover {
+    background-color: #006400;
+}
+
+/* Estilos para los estados de la obra en la tabla */
+.estado-pendiente {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.estado-enproceso {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.estado-completado {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/*
+### Resumen de Funcionalidades Implementadas: 
+
+1.  **Carga de Información:** La tabla se carga al inicio con los datos de obras guardados en `localStorage`.
+2.  **Alta:** Al enviar el formulario, si no hay un ID de obra seleccionado, se agrega un nuevo registro a `localStorage`.
+3.  **Modificación:** Al hacer clic en "Editar", la información se carga en el formulario, y el botón "Guardar Obra" se reemplaza por "Actualizar Obra". Al enviar, el registro se modifica.
+4.  **Baja/Eliminar:** Al hacer clic en "Eliminar Obra" (disponible en modo edición), se pide confirmación y se elimina el registro de `localStorage`.
+5.  **Permisos:** Las funciones de Alta, Modificación y Baja se habilitan/deshabilitan según el `userRole` (Administrador, Gestor, Supervisor).
+6.  **Exportar a Excel (CSV):** El botón "Exportar a Excel" genera un archivo CSV con todos los datos de la tabla, listo para abrirse en cualquier hoja de cálculo. */

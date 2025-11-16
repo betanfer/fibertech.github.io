@@ -1,0 +1,683 @@
+/* =========================================
+   FIBERTECH SOLUTIONS - ESTILOS PRINCIPALES
+   Diseño Empresarial Profesional
+======================================== */
+
+/* =========================================
+   VARIABLES CSS
+======================================== */
+:root {
+    --color-primary: #0066cc; /* Azul principal */
+    --color-primary-dark: #004499; /* Azul oscuro para fondos */
+    --color-secondary: #00d4ff; /* Azul cielo/Acabado sutil */
+    --color-accent: #667eea; /* Morado/Accent para detalles */
+    --color-dark: #1a1a2e; /* Texto principal / Headers */
+    --color-gray: #4a4a4a; /* Texto secundario */
+    --color-light-gray: #f8f9fa; /* Fondo de secciones */
+    --color-white: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+    --shadow-lg: 0 10px 40px rgba(0,0,0,0.15);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+/* =========================================
+   RESET Y CONFIGURACIÓN BASE
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: var(--color-dark);
+    margin-bottom: 15px;
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-gray);
+    margin-bottom: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--color-light-gray);
+}
+
+
+/* =========================================
+   NAVBAR (Fija)
+======================================== */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: var(--fw-bold);
+    color: var(--color-dark);
+}
+
+.logo-icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-right: 5px;
+    line-height: 1;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: var(--color-dark);
+    font-weight: var(--fw-semi-bold);
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--color-primary);
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+.btn-login {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: var(--fw-semi-bold);
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
+    border: 2px solid var(--color-accent);
+}
+
+.btn-login:hover {
+    background-color: #5569c7;
+    color: var(--color-white);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.6);
+}
+
+/* =========================================
+   SECCIÓN HERO (HOME)
+======================================== */
+.hero {
+    height: 90vh; /* Altura principal para el Home */
+    margin-top: 80px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Capa oscura */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    color: var(--color-white);
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-actions .btn-primary,
+.hero-actions .btn-secondary {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: var(--fw-bold);
+    margin: 0 10px;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+}
+
+/* =========================================
+   1. SECCIÓN DE CARACTERÍSTICAS / VALORES
+========================================= */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    background-color: var(--color-white);
+    border-top: 5px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-top-color: var(--color-accent);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 1;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: var(--color-gray);
+}
+
+/* =========================================
+   2. SECCIÓN SOBRE NOSOTROS (Breve)
+========================================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-content .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content .section-text {
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    display: block;
+}
+
+.btn-primary-outline {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: var(--fw-semi-bold);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.btn-primary-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* =========================================
+   3. SECCIÓN DE SERVICIOS DESTACADOS
+========================================= */
+.services-highlight-section {
+    background-color: var(--color-white);
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.highlight-card {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 5px solid var(--color-accent);
+    background-color: var(--color-light-gray);
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+    line-height: 1;
+}
+
+.highlight-card h3 {
+    font-size: 1.35rem;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.highlight-link {
+    font-weight: var(--fw-semi-bold);
+    color: var(--color-primary-dark);
+}
+
+/* =========================================
+   4. SECCIÓN CTA DE LOGROS (Banner)
+========================================= */
+
+.cta-banner {
+    padding: 80px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 26, 46, 0.75); /* Oscuro / Dark */
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    padding-right: 40px;
+}
+
+.stat-item:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-secondary);
+    line-height: 1.2;
+}
+
+.btn-primary-large {
+    display: inline-block;
+    padding: 18px 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.5);
+}
+
+.btn-primary-large:hover {
+    background-color: #5569c7;
+    border-color: #5569c7;
+}
+
+
+/* =========================================
+   FOOTER (Reutilizado de base)
+========================================= */
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul li {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: rgba(255,255,255,0.8);
+}
+
+.footer-section a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.btn-footer-login {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: var(--fw-semi-bold);
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 6px 25px rgba(0, 102, 204, 0.3);
+}
+
+.btn-footer-login:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.6);
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+======================================== */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-image {
+        order: -1; /* Mueve la imagen arriba en móviles */
+    }
+
+    .highlight-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .cta-content h2 {
+        font-size: 2.2rem;
+    }
+    .cta-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        display: none; /* Ocultar por defecto para un menú hamburguesa real */
+    }
+    
+    /* Nota: Se necesitaría JS para activar/desactivar el menú, pero por ahora se muestra para simplicidad */
+    .nav-menu {
+        display: flex; 
+    }
+    
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .stats-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-item {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 10px;
+    }
+    
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Imágenes de servicios */
+.service-image-1 {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%), 
+                url('https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-image-2 {
+    background: linear-gradient(135deg, rgba(240, 147, 251, 0.8) 0%, rgba(245, 87, 108, 0.8) 100%), 
+                url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-image-3 {
+    background: linear-gradient(135deg, rgba(79, 172, 254, 0.8) 0%, rgba(0, 242, 254, 0.8) 100%), 
+                url('https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800');
+    background-size: cover;
+    background-position: center;
+}
+}

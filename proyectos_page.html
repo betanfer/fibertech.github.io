@@ -1,0 +1,355 @@
+|<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | FiberTech Solutions</title>
+    <link rel="stylesheet" href="css/home_styles.css">
+    <link rel="stylesheet" href="css/style_proyectos_page.css">
+</head>
+<body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">FiberTech Solutions</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios_page.html">Servicios</a></li>
+                <li><a href="proyectos_page.html" class="active">Proyectos</a></li>
+                <li><a href="nosotros_page.html">Nosotros</a></li>
+                <li><a href="contacto_page.html">Contacto</a></li>
+                <li><a href="login.html" class="btn-login">Acceso Sistema</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO INTERNO -->
+    <section class="hero-interno">
+        <div class="hero-content">
+            <h1 class="hero-title">Nuestros Proyectos</h1>
+            <p class="hero-subtitle">Implementaciones exitosas de fibra óptica en toda la región</p>
+        </div>
+    </section>
+
+    <!-- FILTROS DE PROYECTOS -->
+    <section class="filtros-section">
+        <div class="container">
+            <div class="filtros">
+                <button class="filtro-btn active" data-filter="todos">Todos los Proyectos</button>
+                <button class="filtro-btn" data-filter="ftth">FTTH</button>
+                <button class="filtro-btn" data-filter="empresarial">Empresarial</button>
+                <button class="filtro-btn" data-filter="gubernamental">Gubernamental</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS CON IMÁGENES -->
+<section class="proyectos-section">
+    <div class="container">
+        <div class="proyectos-grid">
+            
+            <!-- Proyecto 1 - FTTH -->
+            <div class="proyecto-card" data-categoria="ftth">
+                <div class="proyecto-imagen" style="background-image: url('imagenes/RedFibraOpticaFTTH.png'); background-size: cover; background-position: center;">
+                    <div class="proyecto-overlay">
+                        <span class="proyecto-categoria">FTTH</span>
+                    </div>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3>Red FTTH Barrio Cerrado Premium</h3>
+                    <div class="proyecto-meta">
+                        <span class="meta-item">📍 Buenos Aires</span>
+                        <span class="meta-item">📅 2024</span>
+                    </div>
+                    <p>Implementación de red de fibra óptica FTTH para 850 hogares en barrio privado, con arquitectura GPON y servicios triple play.</p>
+                    <div class="proyecto-specs">
+                        <div class="spec-item">
+                            <strong>850</strong>
+                            <span>Hogares conectados</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>45 km</strong>
+                            <span>Cable instalado</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>1 Gbps</strong>
+                            <span>Velocidad máxima</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-tags">
+                        <span class="tag">GPON</span>
+                        <span class="tag">Triple Play</span>
+                        <span class="tag">Alta Densidad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 - Empresarial -->
+            <div class="proyecto-card" data-categoria="empresarial">
+                <div class="proyecto-imagen" style="background-image: url('imagenes/campusCorporativoCordoba.png'); background-size: cover; background-position: center;">
+                    <div class="proyecto-overlay">
+                        <span class="proyecto-categoria">Empresarial</span>
+                    </div>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3>Campus Corporativo Tech Company</h3>
+                    <div class="proyecto-meta">
+                        <span class="meta-item">📍 Córdoba</span>
+                        <span class="meta-item">📅 2023</span>
+                    </div>
+                    <p>Red de fibra óptica de alta velocidad para campus corporativo con 12 edificios, data center principal y redundancia completa.</p>
+                    <div class="proyecto-specs">
+                        <div class="spec-item">
+                            <strong>12</strong>
+                            <span>Edificios</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>80 km</strong>
+                            <span>Fibra tendida</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>10 Gbps</strong>
+                            <span>Enlaces troncales</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-tags">
+                        <span class="tag">Data Center</span>
+                        <span class="tag">Redundancia</span>
+                        <span class="tag">Alta Capacidad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 - Gubernamental -->
+            <div class="proyecto-card" data-categoria="gubernamental">
+                <div class="proyecto-imagen" style="background-image: url('imagenes/redMunicipalConectividadSANTAFE.png'); background-size: cover; background-position: center;">
+                    <div class="proyecto-overlay">
+                        <span class="proyecto-categoria">Gubernamental</span>
+                    </div>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3>Red Municipal de Conectividad</h3>
+                    <div class="proyecto-meta">
+                        <span class="meta-item">📍 Rosario</span>
+                        <span class="meta-item">📅 2023</span>
+                    </div>
+                    <p>Despliegue de red de fibra óptica para conectar 45 edificios públicos municipales con enlaces redundantes y monitoreo 24/7.</p>
+                    <div class="proyecto-specs">
+                        <div class="spec-item">
+                            <strong>45</strong>
+                            <span>Edificios públicos</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>120 km</strong>
+                            <span>Red desplegada</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>100%</strong>
+                            <span>Redundancia</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-tags">
+                        <span class="tag">Gobierno</span>
+                        <span class="tag">Red Anillo</span>
+                        <span class="tag">Monitoreo 24/7</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 - FTTH Nordelta -->
+            <div class="proyecto-card" data-categoria="ftth">
+                <div class="proyecto-imagen" style="background-image: url('imagenes/proyectoFTTHNordelta_BsAs.png'); background-size: cover; background-position: center;">
+                    <div class="proyecto-overlay">
+                        <span class="proyecto-categoria">FTTH</span>
+                    </div>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3>Urbanización Completa - Nordelta</h3>
+                    <div class="proyecto-meta">
+                        <span class="meta-item">📍 Buenos Aires</span>
+                        <span class="meta-item">📅 2022</span>
+                    </div>
+                    <p>Proyecto integral de FTTH para desarrollo urbanístico de 1.500 viviendas con infraestructura subterránea y servicios premium.</p>
+                    <div class="proyecto-specs">
+                        <div class="spec-item">
+                            <strong>1.500</strong>
+                            <span>Viviendas</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>95 km</strong>
+                            <span>Red subterránea</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>2 Gbps</strong>
+                            <span>Plan premium</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-tags">
+                        <span class="tag">GPON</span>
+                        <span class="tag">Subterráneo</span>
+                        <span class="tag">Smart City</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 5 - Centro Comercial -->
+            <div class="proyecto-card" data-categoria="empresarial">
+                <div class="proyecto-imagen" style="background-image: url('imagenes/campusCorporativo.png'); background-size: cover; background-position: center;">
+                    <div class="proyecto-overlay">
+                        <span class="proyecto-categoria">Empresarial</span>
+                    </div>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3>Centro Comercial Metropolitano</h3>
+                    <div class="proyecto-meta">
+                        <span class="meta-item">📍 Mendoza</span>
+                        <span class="meta-item">📅 2023</span>
+                    </div>
+                    <p>Instalación de backbone de fibra óptica para centro comercial de 250 locales con WiFi unificado y sistemas de seguridad IP.</p>
+                    <div class="proyecto-specs">
+                        <div class="spec-item">
+                            <strong>250</strong>
+                            <span>Locales</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>35 km</strong>
+                            <span>Fibra óptica</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>500+</strong>
+                            <span>Puntos WiFi</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-tags">
+                        <span class="tag">Retail</span>
+                        <span class="tag">WiFi</span>
+                        <span class="tag">Seguridad IP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 6 - Hospital -->
+            <div class="proyecto-card" data-categoria="gubernamental">
+                <div class="proyecto-imagen" style="background-image: url('imagenes/hospitalMunicipal.png'); background-size: cover; background-position: center;">
+                    <div class="proyecto-overlay">
+                        <span class="proyecto-categoria">Gubernamental</span>
+                    </div>
+                </div>
+                <div class="proyecto-contenido">
+                    <h3>Hospital Provincial Digital</h3>
+                    <div class="proyecto-meta">
+                        <span class="meta-item">📍 Santa Fe</span>
+                        <span class="meta-item">📅 2024</span>
+                    </div>
+                    <p>Red de fibra óptica hospitalaria con alta disponibilidad para equipamiento médico, historias clínicas digitales y telemedicina.</p>
+                    <div class="proyecto-specs">
+                        <div class="spec-item">
+                            <strong>8</strong>
+                            <span>Pabellones</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>25 km</strong>
+                            <span>Fibra instalada</span>
+                        </div>
+                        <div class="spec-item">
+                            <strong>99.99%</strong>
+                            <span>Disponibilidad</span>
+                        </div>
+                    </div>
+                    <div class="proyecto-tags">
+                        <span class="tag">Salud</span>
+                        <span class="tag">Alta Disponibilidad</span>
+                        <span class="tag">Telemedicina</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios-section">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="testimonio-estrellas">★★★★★</div>
+                    <p class="testimonio-texto">"Excelente trabajo en el despliegue de fibra óptica en nuestro barrio. Cumplieron los plazos y la calidad de la instalación es impecable."</p>
+                    <div class="testimonio-autor">
+                        <strong>Carlos Martínez</strong>
+                        <span>Presidente - Consorcio Barrio Privado</span>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="testimonio-estrellas">★★★★★</div>
+                    <p class="testimonio-texto">"Profesionales de primer nivel. La red implementada en nuestro campus superó todas nuestras expectativas en velocidad y estabilidad."</p>
+                    <div class="testimonio-autor">
+                        <strong>Laura Fernández</strong>
+                        <span>CTO - Tech Company SA</span>
+                    </div>
+                </div>
+                <div class="testimonio-card">
+                    <div class="testimonio-estrellas">★★★★★</div>
+                    <p class="testimonio-texto">"El soporte técnico es excepcional. Siempre disponibles y resuelven cualquier incidencia en tiempo récord."</p>
+                    <div class="testimonio-autor">
+                        <strong>Roberto Silva</strong>
+                        <span>Director de IT - Municipalidad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para Iniciar Tu Proyecto?</h2>
+            <p>Contáctanos y te brindaremos una consultoría técnica sin compromiso</p>
+            <a href="contacto_page.html" class="btn btn-primary btn-large">Solicitar Consultoría</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>FiberTech Solutions</h4>
+                    <p>Líderes en implementación de redes de fibra óptica con tecnología de vanguardia.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios_page.html">Servicios</a></li>
+                        <li><a href="proyectos_page.html">Proyectos</a></li>
+                        <li><a href="nosotros_page.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📧 info@fibertech.com</li>
+                        <li>📞 +54 11 1234-5678</li>
+                        <li>📍 Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Acceso Sistema</h4>
+                    <p>Personal autorizado</p>
+                    <a href="login.html" class="btn-footer-login">Iniciar Sesión</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FiberTech Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/proyectos.js"></script>
+</body>
+</html>

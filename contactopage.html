@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | FiberTech Solutions</title>
+    <link rel="stylesheet" href="css/home_styles.css">
+    <link rel="stylesheet" href="css/style_contacto03.css">
+</head>
+<body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">FiberTech Solutions</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios_page.html">Servicios</a></li>
+                <li><a href="proyectos_page.html">Proyectos</a></li>
+                <li><a href="nosotros_page.html">Nosotros</a></li>
+                <li><a href="contacto_page.html" class="active">Contacto</a></li>
+                <li><a href="index.html" class="btn-login">Acceso Sistema</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO INTERNO -->
+    <section class="hero-interno">
+        <div class="hero-content">
+            <h1 class="hero-title">Contáctanos</h1>
+            <p class="hero-subtitle">Estamos aquí para ayudarte con tu proyecto de fibra óptica</p>
+        </div>
+    </section>
+
+    <!-- CONTACTO PRINCIPAL -->
+    <section class="contacto-main-section">
+        <div class="container">
+            <div class="contacto-grid">
+                
+                <!-- FORMULARIO -->
+                <div class="contacto-formulario">
+                    <h2>Envíanos un Mensaje</h2>
+                    <p class="form-descripcion">Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="empresa">Empresa / Organización</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Mi Empresa S.A.">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="+54 11 1234-5678">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Seleccionar servicio...</option>
+                                <option value="diseño">Diseño de Redes FTTH</option>
+                                <option value="instalacion">Instalación y Tendido</option>
+                                <option value="fusion">Fusión y Certificación</option>
+                                <option value="equipos">Instalación de Equipos</option>
+                                <option value="mantenimiento">Mantenimiento</option>
+                                <option value="consultoria">Consultoría Técnica</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-form">
+                            Enviar Mensaje
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- INFORMACIÓN DE CONTACTO -->
+                <div class="contacto-info-sidebar">
+                    <div class="info-card">
+                        <h3>Información de Contacto</h3>
+                        
+                        <div class="info-item">
+                            <div class="info-icon-circle">
+                                <span>📍</span>
+                            </div>
+                            <div class="info-content">
+                                <h4>Dirección</h4>
+                                <p>Av. Corrientes 1234, Piso 5<br>
+                                Buenos Aires (C1043AAZ)<br>
+                                Argentina</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon-circle">
+                                <span>📞</span>
+                            </div>
+                            <div class="info-content">
+                                <h4>Teléfono</h4>
+                                <p><a href="tel:+541112345678">+54 11 1234-5678</a><br>
+                                <a href="tel:+541187654321">+54 11 8765-4321</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon-circle">
+                                <span>📧</span>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@fibertech.com">info@fibertech.com</a><br>
+                                <a href="mailto:ventas@fibertech.com">ventas@fibertech.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon-circle">
+                                <span>⏰</span>
+                            </div>
+                            <div class="info-content">
+                                <h4>Horario</h4>
+                                <p>Lunes a Viernes: 9:00 - 18:00 hs<br>
+                                Sábados: 9:00 - 13:00 hs<br>
+                                Soporte 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emergencia-card">
+                        <div class="emergencia-icon">🚨</div>
+                        <h4>¿Emergencia?</h4>
+                        <p>Soporte técnico disponible 24/7 para atención de urgencias</p>
+                        <a href="tel:+541112345678" class="btn-emergencia">
+                            Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OFICINAS -->
+    <section class="oficinas-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Oficinas</h2>
+            <div class="oficinas-grid">
+                <div class="oficina-card">
+                    <div class="oficina-icono">🏢</div>
+                    <h3>Buenos Aires</h3>
+                    <p class="oficina-tipo">Casa Central</p>
+                    <p class="oficina-direccion">Av. Corrientes 1234, Piso 5<br>Buenos Aires, Argentina</p>
+                    <p class="oficina-tel">📞 +54 11 1234-5678</p>
+                </div>
+
+                <div class="oficina-card">
+                    <div class="oficina-icono">🏢</div>
+                    <h3>Córdoba</h3>
+                    <p class="oficina-tipo">Oficina Regional</p>
+                    <p class="oficina-direccion">Av. Colón 567<br>Córdoba, Argentina</p>
+                    <p class="oficina-tel">📞 +54 351 123-4567</p>
+                </div>
+
+                <div class="oficina-card">
+                    <div class="oficina-icono">🏢</div>
+                    <h3>Rosario</h3>
+                    <p class="oficina-tipo">Oficina Regional</p>
+                    <p class="oficina-direccion">Bv. Oroño 890<br>Rosario, Argentina</p>
+                    <p class="oficina-tel">📞 +54 341 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="mapa-section">
+        <div class="container">
+        <h2 class="section-title">Encuéntranos Aquí</h2>
+        <p class="mapa-instruccion">Visita nuestra oficina principal en Buenos Aires. Puedes localizarnos en el mapa a continuación.</p>
+        <div class="mapa-ubicacion">
+                   <iframe 
+                src="https://maps.app.goo.gl/7uyZYTc9fbuSJjk26" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación de FiberTech Solutions en Google Maps">
+            </iframe>
+        </div>
+    </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Cuánto tiempo toma implementar una red FTTH?</h3>
+                    <p>El tiempo varía según la magnitud del proyecto. Un proyecto residencial promedio de 500 hogares toma entre 4-6 meses desde el diseño hasta la puesta en marcha.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Ofrecen garantía en sus instalaciones?</h3>
+                    <p>Sí, todas nuestras instalaciones incluyen garantía de 2 años en mano de obra y componentes. Además, ofrecemos contratos de mantenimiento preventivo.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Trabajan en todo el país?</h3>
+                    <p>Tenemos presencia en Buenos Aires, Córdoba y Rosario, pero realizamos proyectos en todo el territorio argentino. Consulta disponibilidad en tu zona.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Realizan proyectos para pequeñas empresas?</h3>
+                    <p>Sí, trabajamos con proyectos de todas las escalas, desde pequeñas oficinas hasta grandes desarrollos urbanísticos y campus corporativos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>FiberTech Solutions</h4>
+                    <p>Líderes en implementación de redes de fibra óptica con tecnología de vanguardia.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios_page.html">Servicios</a></li>
+                        <li><a href="proyectos_page.html">Proyectos</a></li>
+                        <li><a href="nosotros_page.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📧 info@fibertech.com</li>
+                        <li>📞 +54 11 1234-5678</li>
+                        <li>📍 Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Acceso Sistema</h4>
+                    <p>Personal autorizado</p>
+                    <a href="login.html" class="btn-footer-login">Iniciar Sesión</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FiberTech Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

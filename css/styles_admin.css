@@ -1,0 +1,110 @@
+/* Estilos específicos para la página de administración */
+        .admin-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 800px;
+            max-width: 90%;
+            margin-top: 50px; /* Separar un poco del top */
+            text-align: left;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        .admin-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-weight: 600;
+        }
+        .user-form, .user-list {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            background-color: #fdfdfd;
+        }
+        .user-form h3, .user-list h3 {
+            margin-top: 0;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .user-form .input-group, .user-form .select-group {
+            margin-bottom: 15px;
+        }
+        .user-form input[type="text"],
+        .user-form input[type="password"],
+        .user-form select {
+            width: calc(100% - 24px); /* Ajuste por el padding */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        .user-form button {
+            width: auto;
+            padding: 10px 20px;
+            margin-right: 10px;
+            background: linear-gradient(to right, #28a745, #218838); /* Verde para acciones */
+        }
+        .user-form button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .user-form button.cancel {
+            background: linear-gradient(to right, #dc3545, #c82333); /* Rojo para cancelar */
+        }
+
+        .user-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .user-table th, .user-table td {
+            border: 1px solid #eee;
+            padding: 12px;
+            text-align: left;
+        }
+        .user-table th {
+            background-color: #f8f8f8;
+            font-weight: 600;
+            color: #444;
+        }
+        .user-table td button {
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.2s ease;
+        }
+        .user-table td button.edit {
+            background-color: #ffc107;
+            color: #333;
+        }
+        .user-table td button.edit:hover {
+            background-color: #e0a800;
+        }
+        .user-table td button.delete {
+            background-color: #dc3545;
+            color: white;
+        }
+        .user-table td button.delete:hover {
+            background-color: #c82333;
+        }
+        .logout-button {
+            float: right;
+            margin-top: -50px;
+            background: #6c757d;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .logout-button:hover {
+            background: #5a6268;
+        }

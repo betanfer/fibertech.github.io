@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | FiberTech Solutions</title>
+    <link rel="stylesheet" href="css/home_styles.css">
+    <link rel="stylesheet" href="css/style_contacto05.css">
+</head>
+<body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">FiberTech Solutions</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios_page.html">Servicios</a></li>
+                <li><a href="proyectos_page.html">Proyectos</a></li>
+                <li><a href="nosotros_page.html">Nosotros</a></li>
+                <li><a href="contacto_page.html" class="active">Contacto</a></li>
+                <li><a href="index.html" class="btn-login">Acceso Sistema</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO INTERNO -->
+    <section class="hero-interno">
+        <div class="hero-content">
+            <h1 class="hero-title">Contáctanos</h1>
+            <p class="hero-subtitle">Estamos aquí para ayudarte con tu proyecto de fibra óptica</p>
+        </div>
+    </section>
+
+    <!-- CONTACTO PRINCIPAL (Formulario y Datos de Contacto) -->
+    <section class="contacto-main-section section-container">
+        <div class="container">
+            <div class="contacto-grid">
+                <!-- Formulario -->
+                <div class="contacto-formulario">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de Contacto (Sidebar) -->
+                <div class="contacto-info">
+                    <h3>Información Directa</h3>
+                    <div class="contacto-info-item">
+                        <span class="icon">📍</span>
+                        <p>
+                            <strong>Oficina Principal</strong>
+                            <span>Buenos Aires, Argentina</span>
+                        </p>
+                    </div>
+                    <div class="contacto-info-item">
+                        <span class="icon">📞</span>
+                        <p>
+                            <strong>Teléfono</strong>
+                            <span>+54 11 1234-5678</span>
+                        </p>
+                    </div>
+                    <div class="contacto-info-item">
+                        <span class="icon">📧</span>
+                        <p>
+                            <strong>Email</strong>
+                            <span>info@fibertech.com</span>
+                        </p>
+                    </div>
+                    <div class="contacto-info-item">
+                        <span class="icon">🕒</span>
+                        <p>
+                            <strong>Horario de Atención</strong>
+                            <span>Lun - Vie: 9:00 a 18:00 hs (GMT-3)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DE MAPA DE UBICACION AGREGADA -->
+    <section class="section-container mapa-section">
+        <div class="container">
+            <h2 class="section-title">Encuéntranos Aquí</h2>
+            <p class="mapa-instruccion">Visita nuestra oficina principal. Puedes localizarnos en el mapa a continuación. **REEMPLAZA EL IFRAME CON TU UBICACIÓN REAL**</p>
+            <div class="mapa-ubicacion">
+                <!-- IFRAME DE EJEMPLO (Google Maps) -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1085278782353!2d-58.3742211!3d-34.6015528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2307567e9146f%3A0x6e6804a29a4a77e0!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1700200000000!5m2!1ses!2sar" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de FiberTech Solutions en Google Maps">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <!-- FIN SECCION DE MAPA -->
+
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="faq-section section-container">
+        <div class="container">
+            <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Qué es la fibra óptica?</h3>
+                    <p>Es un medio de transmisión que utiliza hilos de vidrio o plástico para enviar datos mediante pulsos de luz. Ofrece velocidades de internet significativamente mayores y una conexión más estable que el cable tradicional.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Qué servicios ofrecen?</h3>
+                    <p>Ofrecemos diseño, instalación, tendido, fusión, certificación y mantenimiento de redes FTTH (Fiber To The Home) y redes de área local para empresas y barrios privados.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cuál es la diferencia entre Fusión y Certificación?</h3>
+                    <p>La **fusión** es el proceso de unir dos fibras ópticas mediante calor para crear un enlace permanente. La **certificación** es la prueba posterior que verifica que la fusión y el enlace cumplen con los estándares de calidad y rendimiento requeridos.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Tienen cobertura en mi zona?</h3>
+                    <p>Trabajamos en proyectos a nivel nacional en Argentina, enfocándonos en la implementación de infraestructura. Contáctanos para discutir tu proyecto y confirmar nuestra capacidad de servicio en tu área específica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>FiberTech Solutions</h4>
+                    <p>Líderes en implementación de redes de fibra óptica con tecnología de vanguardia.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios_page.html">Servicios</a></li>
+                        <li><a href="proyectos_page.html">Proyectos</a></li>
+                        <li><a href="nosotros_page.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📧 info@fibertech.com</li>
+                        <li>📞 +54 11 1234-5678</li>
+                        <li>📍 Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Acceso Sistema</h4>
+                    <p>Personal autorizado</p>
+                    <a href="login.html" class="btn-footer-login">Iniciar Sesión</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FiberTech Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para manejo de formulario (usando un modal simple en lugar de alert) -->
+    <div id="modal-success" class="modal-message" style="display: none;">
+        <div class="modal-content">
+            <h3>¡Mensaje Enviado!</h3>
+            <p>¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</p>
+            <button onclick="document.getElementById('modal-success').style.display='none';" class="modal-close">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+        this.reset();
+    });
+    </script>
+</body>
+</html>

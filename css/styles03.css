@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6); /* Degradado elegante */
+    color: #333;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semitransparente */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    width: 400px;
+    max-width: 90%; /* Responsivo */
+    text-align: center;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque detrás del contenedor */
+    -webkit-backdrop-filter: blur(5px); /* Para compatibilidad con Safari */
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #9b59b6; /* Color de foco */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #71b7e6, #9b59b6); /* Degradado en el botón */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px); /* Efecto "levantar" */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    color: #e74c3c; /* Rojo más vibrante */
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 0.95em;
+}

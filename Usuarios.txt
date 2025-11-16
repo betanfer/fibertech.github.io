@@ -1,0 +1,16 @@
+
+USUARIOS: 
+
+Usuario: admin Password: root rol: ADMINISTRADOR
+Usuario: fer   Password: fer rol: GESTOR
+Usuario: supervisor_obra Passord: claveSuper3 rol: SUPERVISOR
+
+
+// Cargar usuarios desde localStorage o inicializar con valores por defecto
+    let users = JSON.parse(localStorage.getItem('adminUsers')) || [
+        { usuario: 'admin', password: 'root', rol: 'Administrador' },
+        { usuario: 'gestor_proyectos', password: 'claveGestor2', rol: 'Gestor' },
+        { usuario: 'fer', password: 'fer', rol: 'Gestor' },
+        { usuario: 'javier', password: 'root', rol: 'Supervisor' },
+        { usuario: 'supervisor_obra', password: 'claveSuper3', rol: 'Supervisor' }
+    ];

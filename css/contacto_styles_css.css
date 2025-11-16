@@ -1,0 +1,398 @@
+/* ========================================
+   CONTACTO - ESTILOS ESPECÍFICOS
+======================================== */
+
+/* Hero Interno */
+.hero-interno {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0066cc 0%, #667eea 100%);
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-interno::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+/* Contacto Principal */
+.contacto-main-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+/* Formulario */
+.contacto-formulario {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+.contacto-formulario h2 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.form-descripcion {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background-color: #fafafa;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #0066cc;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+}
+
+.form-group textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.btn-form {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.05rem;
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-form:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+/* Sidebar de Información */
+.contacto-info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-icon-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #0066cc 0%, #667eea 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.info-content h4 {
+    color: #1a1a2e;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-content p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.info-content a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* Card de Emergencia */
+.emergencia-card {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.emergencia-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.emergencia-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.emergencia-card p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.btn-emergencia {
+    display: inline-block;
+    background: white;
+    color: #dc3545;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-emergencia:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Oficinas */
+.oficinas-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.oficinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.oficina-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.oficina-card:hover {
+    transform: translateY(-10px);
+    border-color: #0066cc;
+}
+
+.oficina-icono {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.oficina-card h3 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.oficina-tipo {
+    color: #0066cc;
+    font-weight: 600;
+    margin-bottom: 1.5rem !important;
+}
+
+.oficina-direccion {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1rem !important;
+}
+
+.oficina-tel {
+    color: #1a1a2e;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+/* Mapa */
+.mapa-section {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, white, #f8f9fa);
+}
+
+.mapa-placeholder {
+    background: linear-gradient(135deg, #0066cc 0%, #667eea 100%);
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+}
+
+.mapa-instruccion {
+    margin-top: 1rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* FAQ */
+.faq-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.faq-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.faq-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border-left-color: #0066cc;
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-formulario {
+        padding: 2rem;
+    }
+    
+    .contacto-formulario h2 {
+        font-size: 2rem;
+    }
+    
+    .info-card {
+        padding: 2rem;
+    }
+    
+    .oficinas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mapa-placeholder {
+        height: 350px;
+        font-size: 1.1rem;
+    }
+}

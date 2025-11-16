@@ -1,0 +1,489 @@
+/* =========================================
+   Estilos específicos de la página Nosotros
+   ========================================= */
+
+/* --- HERO INTERNO (Ya tiene estilos base en home-styles, solo se ajusta) --- */
+
+.hero-interno {
+    /* Altura y fondo (ajustable) */
+    background: url('../img/hero-nosotros.jpg') no-repeat center center/cover;
+    height: 40vh; /* Altura más corta para páginas internas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-blanco);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.hero-interno::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Overlay oscuro */
+    z-index: 2;
+}
+
+.hero-content {
+    z-index: 3;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* --- SECCIONES GENÉRICAS --- */
+
+.historia-section,
+.mvv-section,
+.equipo-section,
+.certificaciones-section,
+.timeline-section,
+.cta {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-primario);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+/* =========================================
+   1. NUESTRA HISTORIA
+   ========================================= */
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.historia-contenido .etiqueta {
+    display: inline-block;
+    background-color: var(--color-primario-claro);
+    color: var(--color-primario-oscuro);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.historia-contenido h2 {
+    font-size: 2.2rem;
+    color: var(--color-secundario);
+    margin-bottom: 20px;
+}
+
+.historia-contenido p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: var(--color-texto-gris);
+}
+
+.historia-imagen .imagen-placeholder {
+    background-color: var(--color-gris-claro);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secundario);
+    font-style: italic;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    /* Simulación de imagen: se reemplazaría con una imagen real */
+    background-image: url('https://picsum.photos/600/400?random=1');
+    background-size: cover;
+    background-position: center;
+    font-size: 0; /* Ocultar texto si se usa imagen */
+}
+
+/* =========================================
+   2. MISIÓN, VISIÓN Y VALORES
+   ========================================= */
+
+.mvv-section {
+    background-color: var(--color-gris-claro);
+}
+
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.mvv-card {
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    transition: transform 0.3s ease;
+}
+
+.mvv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.mvv-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.mvv-card h3 {
+    color: var(--color-primario-oscuro);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.mvv-card p {
+    color: var(--color-texto-gris);
+    line-height: 1.6;
+}
+
+.valores-lista {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.valores-lista li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--color-gris-medio);
+    color: var(--color-texto-principal);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.valores-lista li:last-child {
+    border-bottom: none;
+}
+
+.valores-lista li::before {
+    content: '✓';
+    color: var(--color-primario);
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+/* =========================================
+   3. EQUIPO DIRECTIVO
+   ========================================= */
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.miembro-card {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    border-radius: var(--border-radius);
+    transition: box-shadow 0.3s ease;
+}
+
+.miembro-card:hover {
+    box-shadow: var(--shadow-medium);
+}
+
+.miembro-foto .foto-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-primario-claro);
+    color: var(--color-primario-oscuro);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border: 5px solid var(--color-primario);
+    /* Simulación de imagen: se reemplazaría por una imagen real */
+}
+
+.miembro-info h3 {
+    margin-bottom: 5px;
+    color: var(--color-secundario);
+    font-size: 1.4rem;
+}
+
+.miembro-info .cargo {
+    color: var(--color-primario);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    font-style: italic;
+}
+
+.miembro-info .bio {
+    color: var(--color-texto-gris);
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   4. CERTIFICACIONES
+   ========================================= */
+
+.certificaciones-section {
+    background-color: var(--color-secundario-oscuro);
+    color: var(--color-blanco);
+}
+
+.certificaciones-section .section-title {
+    color: var(--color-blanco);
+}
+
+.certificaciones-section .section-title::after {
+    background-color: var(--color-primario);
+}
+
+.certificaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.cert-card {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cert-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cert-card h4 {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: var(--color-primario-claro);
+}
+
+.cert-card p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   5. LÍNEA DE TIEMPO
+   ========================================= */
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: var(--color-gris-claro);
+    margin-left: -2px;
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+    clear: both; /* Asegura que el elemento se alinee correctamente */
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    color: var(--color-texto-gris);
+    line-height: 1.5;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-primario);
+    border: 4px solid var(--color-blanco);
+    top: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.timeline-item:nth-child(odd)::after {
+    right: -10px;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -10px;
+}
+
+/* --- CTA (Ya tiene estilos base en home-styles, solo se ajusta) --- */
+
+.cta {
+    background-color: var(--color-primario);
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--color-blanco);
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn-primary {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: 2px solid var(--color-secundario);
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn-primary:hover {
+    background-color: var(--color-secundario-oscuro);
+    border-color: var(--color-secundario-oscuro);
+}
+
+/* =========================================
+   6. Media Queries (Responsividad)
+   ========================================= */
+
+@media (max-width: 992px) {
+    .historia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .historia-imagen {
+        order: -1; /* Mueve la imagen arriba en móviles */
+    }
+
+    .historia-imagen .imagen-placeholder {
+        height: 300px;
+    }
+
+    .mvv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* Línea de tiempo responsiva */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+        left: 0 !important;
+        text-align: left !important;
+    }
+
+    .timeline-item::after {
+        left: 10px !important;
+        right: auto !important;
+    }
+
+    .timeline-year {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .historia-contenido h2 {
+        font-size: 1.8rem;
+    }
+}
